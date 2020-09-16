@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Artsemij Spryntsyn</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <main>
+         <img class="photo" src="https://sun9-52.userapi.com/c5304/g35262467/a_49d5aa76.jpg?ava=1" size="15%">
+         <h1>Artsemij Spryntsyn</h1>
+         <section>
+            <h2>Contacts</h2>
+            <ul>
+               <li><strong>tel:</strong> +375292884393</li>
+               <li><strong>vk:</strong> <a href="https://vk.com/artik122" style="color: yellow">@artik122</a></li>
+               <li><strong>mail:</strong> sprincyn@gmail.com</li>
+            </ul>
+         </section>
+         <section>
+            <h2>Summary</h2>
+            <p>My Goals may seem trivial to some, but I have them, and I am gradually and confidently moving on my path of self-education.</p>
+            <blockquote>
+               <p>You don't have to be the best, you just have to be better than you were yesterday.</p>
+               <cite>Joe Frazier</cite>
+            </blockquote>
+         </section>
+         <section>
+            <h2>Skills</h2>
+            <p>I study front languages such as JavaScript, HTML, and CSS. I also don't stop there and study the framework in addition Vue.js.</p>
+         </section>
+         <section>
+            <h2>Latest code example</h2>
+            <p>This code snippet shows the functionality for entering grades in subjects (conditionally school) on Vue. Depending on the entered data or data from the server, the number of inputs for entering ratings changes.</p>
+            <details>
+               <summary>Click here to check code</summary>
+               <pre class="code">
+&lt;div class="subj" class="input-field col s12">
+  Number of subjects:
+  &lt;input type="number" id="inputSubj" min="1" max="50" 
+   v-model.number.lazy="lengthEvals" @change="inputCounts" v-focus>&lt;br>
+  &lt;div class="subjects" v-for="(value, index) of lengthEvals">
+    &lt;input type="number" v-model.number="evals[index]" 
+     id="inputValueSubjects" min="1" max="10" @change="getValues" required>
+    &lt;button type="button" class="btn-floating waves-effect waves-light green" 
+     v-for="i in 10" @click="setValue(index, i)">{{i}}&lt;/button>
+  &lt;/div>
+  &lt;div class="mean">Average score in subjects: {{mean}}, value: {{mean*10}}&lt;/div>
+&lt;/div></pre>
+            </details>
+         </section>
+         <section>
+            <h2>Experience</h2>
+            <ul>
+               <li>A year ago, I took a course in JS at <b>Anderson</b>. At the moment participating in the training courses <b>rsschool JS</b>. I also get information from <b>Glo Academy</b> online courses and from the <b>Internet</b> throughout the year. Some works are posted on my <a href="https://github.com/Flashbuck">GitHub</a>.</li>
+            </ul>
+         </section>
+         <section>
+            <h2>Education</h2>
+            <ul>
+               <li>Sukhoi State Technical University of Gomel (2020).</li>
+            </ul>
+         </section>
+         <section>
+            <h2>English</h2>
+            <p>My English level is <b>A2</b> and it is also written <b>in my self development list</b>.</p>
+         </section>
+      </main>
+   </body>
+</html>
